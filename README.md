@@ -119,6 +119,7 @@ As with the individual objects, you can use `console.log` to print out the conte
 
 To have a way to present what we had in our objects, we will make use of DOM, or Document Object Model. For the time being, just know that it allows us to modify what is on the screen (You will get to learn more next week).
 
+
 To see what an object contains and to change the object shown, paste the following after your array in the Javascript file:
 
 ```javascript
@@ -154,12 +155,7 @@ rButton.onclick = function(){
 general updateContent function, allows us to not have to type
 each of the individual functions inside multiple times 
 */
-function updateContent (thingIndex){
-  visual.src = things[thingIndex].imgsrc;
-  objName.innerHTML = things[thingIndex].name;
-  type.innerHTML = things[thingIndex].type;
-  desc.innerHTML = things[thingIndex].desc;
-}
+// create function updateContent here
 
 // setting the first image and set of text to display by using the function just made
 updateContent(thingIndex);
@@ -204,6 +200,9 @@ rButton.addEventListener("click", function(){
     updateContent(thingIndex);
 });
 ```
+
+In the designated space of the provided boilerplate code, create the updateContent function. This function takes in a value `thingIndex`, and does the following inside:
+-
 
 In the code, we notice one data type being used. In this case, it is the `number` datatype. It is one of Javascript's primitive data types, with the `string` data types we used in our objects being another such datatype.
 

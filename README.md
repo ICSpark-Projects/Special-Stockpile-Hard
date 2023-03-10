@@ -17,18 +17,16 @@ Create your files:
 
 In your index.html file, create a div in the body that includes the following elements (header titles do not have to be identical, but this is a starting point):
 - img with an id like "visual" or another similar id
-- a header with "name:"
+- a header with "name:" in it's innerHTML
 - a header or p with the id "obj-name"
-- a header with "type:"
+- a header with "type:" in it's innerHTML
 - a p with the id "desc"
 
 Outside of the div you just made, create two buttons containing the text "left" and "right" respectively. As with some of the elements in the div, include an id for each one (i.e. "left-button" for the left one, and "right-button" for the one on the right. The buttons can either come before or after the div.)
 
 ## Part 3: Prepare the CSS file
 
-In your style.css file, create a simple CSS selector for the div element. For now, we can just select a border style. 
-
-Include the style.css file into your workspace, either by downloading the file or pasting the contents. 
+In your style.css file, create a simple CSS selector for the div element. For now, let's set a border style of `solid`. 
 
 ## Part 4: Prepare the JS file 
 
@@ -50,59 +48,41 @@ In your Javascript window, create an object called object1. In your new object, 
 
 Here is an example of an object:
 ```javascript
-var object3 = {
-  imgsrc: "https://static.tvtropes.org/pmwiki/pub/images/fotoacecombatzero_thebelkanwarjapons.jpg",
-  name: "Ace Combat Zero: The Belkan War",
-  type: "game",
-  desc: "cool and epic video game"
+var object3 = { 
+  imgsrc: "myImageURL.com" ... 
+  // you can fill in the remaining properties
 }
 ```
 
 Once you have done so, fill in each of the properties. Paste in the link for the image you want to use in front of imgsrc, and then also include text for the other properties.
 
-To check if you created your object properly, add the following under your object:
-
-```javascript 
-console.log(object1);
-```
+Check if you've created your object properly by printing it to the console.
 
 In your console, you should see the text entered in each property of the object. For example, if we do this with our placeholder object, you should see something like this:
 
 ```javascript
 // [object Object]
 {
-  imgsrc: "https://static.tvtropes.org/pmwiki/pub/images/fotoacecombatzero_thebelkanwarjapons.jpg",
-  name: "Ace Combat Zero: The Belkan War",
-  type: "game",
-  desc: "cool and epic video game"
+  imgsrc: "myImageURL.com" ...
+// the other properties
 }
 ```
-
 
 Once you feel satisfied with this first object, make at least two more objects with the same properties as the first one. You may want to name these objects in a similar way to the first one, such as "object2", "object3", and so forth. Use the other objects to represent other things you like. You can print out the other objects to check if you set them up correctly by changing "object1" in the console.log shown earlier. For example, making a print for each object will look like this:
 
 ```javascript
 // [object Object]
 {
-  imgsrc: "https://wiki.teamfortress.com/w/images/thumb/b/bc/GoldenFryingPan.png/250px-GoldenFryingPan.png",
-  name: "Golden Frying Pan",
-  type: "Pan",
-  desc: "pan but golden"
+  imgsrc: "myImageURL.com" ...
 }
 // [object Object]
 {
-  imgsrc: "https://i.ebayimg.com/images/g/FqkAAOSwOyRgsMe8/s-l640.jpg",
-  name: "Sakuya Izayoi fumo",
-  type: "fumo",
-  desc: "funni meido"
+  imgsrc: "myImageURL.com" ...
 }
 // [object Object]
 {
-  imgsrc: "https://static.tvtropes.org/pmwiki/pub/images/fotoacecombatzero_thebelkanwarjapons.jpg",
-  name: "Ace Combat Zero: The Belkan War",
-  type: "game",
-  desc: "cool and epic video game"
-}]
+  imgsrc: "myImageURL.com" ...
+}
 ```
 
 

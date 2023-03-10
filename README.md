@@ -91,29 +91,11 @@ Once you feel satisfied with this first object, make at least two more objects w
 
 Once you have your objects created, create an array to store all the objects. We can name this array "things".
 
-As with the individual objects, you can use `console.log` to print out the contents of all the objects in the array. It should look something like this:
+As with the individual objects, you can use `console.log` to print out the contents of all the objects in the array. You should see something like this at the top of your console:
 ```javascript
 // [object Array] (3)
-[// [object Object]
-{
-  imgsrc: "https://wiki.teamfortress.com/w/images/thumb/b/bc/GoldenFryingPan.png/250px-GoldenFryingPan.png",
-  name: "Golden Frying Pan",
-  type: "Pan",
-  desc: "pan but golden"
-},// [object Object]
-{
-  imgsrc: "https://i.ebayimg.com/images/g/FqkAAOSwOyRgsMe8/s-l640.jpg",
-  name: "Sakuya Izayoi fumo",
-  type: "fumo",
-  desc: "funni meido"
-},// [object Object]
-{
-  imgsrc: "https://static.tvtropes.org/pmwiki/pub/images/fotoacecombatzero_thebelkanwarjapons.jpg",
-  name: "Ace Combat Zero: The Belkan War",
-  type: "game",
-  desc: "cool and epic video game"
-}]
 ```
+From there, let your mentor(s) check the rest of the console.
 
 ## Part 5: DOM magic
 
@@ -202,7 +184,13 @@ rButton.addEventListener("click", function(){
 ```
 
 In the designated space of the provided boilerplate code, create the updateContent function. This function takes in a value `thingIndex`, and does the following inside:
--
+- set the `src` field of the `visual` element equal to the `imgsrc` value for an object in the `things` array
+- set the `innerHTML` field of the `objName` element equal to the `name` value for an object in the `things` array
+- set the `innerHTML` field of the `type` element equal to the `type` value for an an object in the `things` array
+- set the `innerHTML` field of the `desc` element equal to the `desc` value for an object in the `things` array
+
+Don't forget to make use of the `thingIndex` variable, as this will aid in selecting a specific
+index of your array.
 
 In the code, we notice one data type being used. In this case, it is the `number` datatype. It is one of Javascript's primitive data types, with the `string` data types we used in our objects being another such datatype.
 

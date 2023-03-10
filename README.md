@@ -20,6 +20,8 @@ In your index.html file, create a div in the body that includes the following el
 - a header with "name:" in it's innerHTML
 - a header or p with the id "obj-name"
 - a header with "type:" in it's innerHTML
+- a p with the id "type"
+- a header with "description:" in it's innerHTML
 - a p with the id "desc"
 
 Outside of the div you just made, create two buttons containing the text "left" and "right" respectively. As with some of the elements in the div, include an id for each one (i.e. "left-button" for the left one, and "right-button" for the one on the right. The buttons can either come before or after the div.)
